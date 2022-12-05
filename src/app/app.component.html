@@ -17,13 +17,13 @@
 
         <div class="top-display relative w-full h-1/3 overflow-hidden rounded-t-sm">
 
-            <img src="../assets/night-clear.png" *ngIf="(this.time >= 13) && data.current.cloud < 40"
+            <img src="assets/night-clear.png" *ngIf="(this.time >= 13) && data.current.cloud < 40"
                 class="absolute">
-            <img src="../assets/night-cloudy.png" *ngIf="(this.time >= 13) && data.current.cloud > 40"
+            <img src="assets/night-cloudy.png" *ngIf="(this.time >= 13) && data.current.cloud > 40"
                 class="absolute">
-            <img src="../assets/day-clear.png" *ngIf="(this.time < 13) && data.current.cloud < 40"
+            <img src="assets/day-clear.png" *ngIf="(this.time < 13) && data.current.cloud < 40"
                 class="absolute">
-            <img src="../assets/day-cloudy.png" *ngIf="(this.time < 13) && data.current.cloud > 40"
+            <img src="assets/day-cloudy.png" *ngIf="(this.time < 13) && data.current.cloud > 40"
                 class="absolute">
 
             <div
