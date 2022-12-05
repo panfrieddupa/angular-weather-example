@@ -25,7 +25,6 @@ export class AppComponent implements OnInit {
 
     onSubmit() {
         this.getData(this.city);
-        console.log(this.time);
     }
 
     private getData(city: string) {
@@ -35,7 +34,6 @@ export class AppComponent implements OnInit {
                     this.data = res;
                     let localTime = new Date(res.location.localtime);
                     this.time = localTime.getHours();
-                    console.log(localTime.getHours());
                 }
             })
     }
